@@ -498,7 +498,7 @@ button {
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transit-elem);
     padding: 24px;
-    width: 448px;
+    width: 408px;
     min-height: 576px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -515,7 +515,8 @@ button {
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: background var(--transit-elem);
+    fill: #000;
+    transition: background var(--transit-elem), fill var(--transit-elem), filter var(--transit-elem);
 }
 
 .modal-close-btn:is(:hover, :focus) {
@@ -538,11 +539,6 @@ button {
     text-align: center;
 }
 
-.modal-label span {
-    display: block;
-    margin-bottom: 4px;
-}
-
 .modal-input {
     width: 100%;
     height: 40px;
@@ -555,6 +551,7 @@ button {
 
 .input-wrap {
     position: relative;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -576,12 +573,13 @@ button {
 
 .modal-comment {
     height: 120px;
-    margin-top: 4px;
     padding: 8px 16px;
     resize: none;
 }
 
 .title-input{
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     color: #8E8F99;
@@ -601,6 +599,7 @@ button {
     display: flex;
     align-items: center;
     color: #757575;
+    margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -641,6 +640,9 @@ button {
 }
 
 .modal-btn {
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
+    width: 169px;
+    align-items: center;
+    justify-content: center;
 }
 
